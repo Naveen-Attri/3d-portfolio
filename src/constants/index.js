@@ -21,18 +21,18 @@ const words = [
   { text: "Ideas", imgPath: "/images/ideas.svg" },
   { text: "Concepts", imgPath: "/images/concepts.svg" },
   { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Solutions", imgPath: "/images/code.svg" },
   { text: "Ideas", imgPath: "/images/ideas.svg" },
   { text: "Concepts", imgPath: "/images/concepts.svg" },
   { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Solutions", imgPath: "/images/code.svg" },
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 10, suffix: "+", label: "Months Learning Android Dev" },
+  { value: 6, suffix: "", label: "Technologies Learned" },
+  { value: 7, suffix: "", label: "Completed Projects" },
+  { value: 3, suffix: "", label: "Hackathons Attended" },
 ];
 
 const logoIconsList = [
@@ -73,21 +73,22 @@ const logoIconsList = [
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    imgPath: "/images/seo.png", // You can keep or replace icons for better relevance
+    title: "Quick Learning",
+    desc: "Always eager to learn and adapt — picking up new tools, frameworks, and concepts fast.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Collaborative Spirit",
+    desc: "Enjoys working in teams, open to feedback, and values clear and respectful communication.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Self-Driven",
+    desc: "Takes initiative on personal projects and keeps pushing boundaries through consistent practice.",
   },
 ];
+
 
 const techStackImgs = [
   {
@@ -126,10 +127,10 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
+    name: "C++ Developer",
+    modelPath: "/models/cpp.glb",
+    scale: 0.08,
+    rotation: [0, 0, 0],
   },
   {
     name: "Interactive Developer",
@@ -147,42 +148,46 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
-    responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
-    ],
-  },
-  {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
-    responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
-  },
-  {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review:
+        "Naveen has shown curiosity and enthusiasm in exploring open-source contributions. He’s actively learning codebases and preparing meaningful PRs.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Started Exploring Open Source",
+    date: "Mar 2025 – Present",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Studying codebases of projects built with React, Vite, and Node.js.",
+      "Learning how to navigate issues, write meaningful PRs, and follow contribution guidelines.",
+      "Preparing for active contributions in the coming weeks.",
+    ],
+  },
+  {
+    review:
+        "The phishing email detection system is a well-executed project that combines machine learning and cybersecurity awareness. Naveen’s commitment to applying theoretical concepts to real-world problems is commendable.",
+    imgPath: "/images/exp2.png",
+    logoPath: "/images/logo2.png",
+    title: "Developed Phishing Email Detection System",
+    date: "Mar 2025 – Apr 2025",
+    responsibilities: [
+      "Used Python and ML techniques to classify phishing emails based on content and metadata.",
+      "Preprocessed and vectorized data, trained models, and evaluated accuracy.",
+      "Built a basic UI to simulate email classification for demonstration.",
+    ],
+  },
+  {
+    review:
+        "Naveen’s work on his chess engine 'Sofia' displays deep understanding of algorithms, optimization, and systems design. It's an impressive demonstration of his growth and passion for C++ development.",
+    imgPath: "/images/exp1.png",
+    logoPath: "/images/logo1.png",
+    title: "Built 'Sofia' — A Chess Engine in C++",
+    date: "Oct 2024 – Mar 2025",
+    responsibilities: [
+      "Implemented move generation using bitboards for performance.",
+      "Developed alpha-beta pruning, quiescence search, and multithreading for efficient search.",
+      "Built a UCI-compliant interface for external GUI integration.",
     ],
   },
 ];
+
 
 const expLogos = [
   {
@@ -201,48 +206,49 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Prof. Kavita Sharma",
+    mentions: "@kavitasharma",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+        "Naveen is one of the most enthusiastic and inquisitive students I’ve taught. His dedication to understanding core concepts and applying them in real projects, like his chess engine, is impressive.",
     imgPath: "/images/client1.png",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Ankit Verma",
+    mentions: "@ankitv",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
-  },
-  {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
-    review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+        "I’ve collaborated with Naveen on multiple projects. He’s the kind of teammate who lifts the whole group. Always willing to debug, brainstorm, and experiment with fresh ideas.",
     imgPath: "/images/client2.png",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "Dr. Arvind Kumar",
+    mentions: "@arvindsir",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
+        "Naveen is proactive, disciplined, and always exploring new avenues of development. His work ethic and curiosity in areas like graphics programming and open source make him stand out.",
+    imgPath: "/images/client3.png",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "Ritika Mehra",
+    mentions: "@ritikamehra",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+        "As a peer, I’ve seen how consistently Naveen improves himself. He learns fast and is always experimenting with new tech — it’s motivating to be around someone so driven.",
     imgPath: "/images/client4.png",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
+    name: "Rahul Iyer",
+    mentions: "@rahuli",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+        "Naveen’s ability to pick up new frameworks and technologies quickly makes him a great developer in the making. He’s focused, humble, and fun to work with!",
+    imgPath: "/images/client5.png",
+  },
+  {
+    name: "Dr. Neha Joshi",
+    mentions: "@drnehaj",
+    review:
+        "His curiosity, passion for development, and initiative to work on meaningful side projects make Naveen a student with immense potential. Keep an eye on this one!",
     imgPath: "/images/client6.png",
   },
 ];
+
 
 const socialImgs = [
   {

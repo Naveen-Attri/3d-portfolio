@@ -96,7 +96,7 @@ const Experience = () => {
     >
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader
-          title="Professional Work Experience"
+          title="My Developer Journey"
           sub="💼 My Career Overview"
         />
         <div className="mt-32 relative">
@@ -106,7 +106,7 @@ const Experience = () => {
                 <div className="xl:w-2/6">
                   <GlowCard card={card}>
                     <div>
-                      <img src={card.imgPath} alt="exp-img" />
+                      {/*<img src={card.imgPath} alt="exp-img" />*/}
                     </div>
                   </GlowCard>
                 </div>
